@@ -17,7 +17,7 @@ const GetInvolved = () => {
 
         {/* Support Options */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-12">Ways to Support CRC</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Ways to Support CFRC</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Donate */}
             <Card className="shadow-medium hover:shadow-strong transition-smooth">
@@ -80,7 +80,7 @@ const GetInvolved = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-4 text-primary">Partner with Us</h3>
                 <p className="text-muted-foreground mb-6">
-                  Organizations and institutions can collaborate with CRC to advance 
+                  Organizations and institutions can collaborate with CFRC to advance 
                   research initiatives and workforce development programs.
                 </p>
                 <Button variant="outline" asChild>

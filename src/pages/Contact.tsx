@@ -117,7 +117,7 @@ const Contact = () => {
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold mb-4 text-primary">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  CRC empowers individuals and organizations from grassroots communities to global 
+                  CFRC empowers individuals and organizations from grassroots communities to global 
                   platforms by advancing workforce development, promoting cross-sector collaboration, 
                   and connecting research to real-world impact.
                 </p>

@@ -25,7 +25,7 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				
-				// CRC Brand Colors
+				// CFRC Brand Colors
 				'brand-deep-blue': 'hsl(var(--brand-deep-blue))',
 				'brand-teal': 'hsl(var(--brand-teal))',
 				'brand-gold': 'hsl(var(--brand-gold))',

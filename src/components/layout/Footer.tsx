@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
                 <span className="text-accent-foreground font-bold text-lg">C</span>
               </div>
-              <span className="font-bold text-xl">Center for Research & Collaboration (CFRC)</span>
+              <span className="font-bold text-xl">Cure for Rare Cancer (CFRC)</span>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Empowering individuals and organizations through workforce development, 
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
-          <p className="text-primary-foreground/80">© 2025 Center for Research & Collaboration (CFRC)</p>
+          <p className="text-primary-foreground/80">© 2025 Cure for Rare Cancer (CFRC)</p>
           <p className="text-primary-foreground/80 mt-2 md:mt-0">
             Website Developed by:{" "}
             <a 

@@ -20,7 +20,7 @@ const Home = () => {
             Research for Solutions. Collaboration for Growth.
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            CRC empowers individuals and organizations from grassroots communities to global platforms 
+            CFRC empowers individuals and organizations from grassroots communities to global platforms 
             by advancing workforce development, promoting cross-sector collaboration, and connecting 
             research to real-world impact.
           </p>

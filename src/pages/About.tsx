@@ -7,7 +7,7 @@ const About = () => {
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">About CRC</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">About CFRC</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Empowering research communities through collaboration and workforce development
           </p>
@@ -19,10 +19,10 @@ const About = () => {
             <CardContent className="p-8">
               <h2 className="text-3xl font-bold mb-6 text-primary">Founded on Purpose</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                The Center for Research & Collaboration (CRC) was born from a recognition that 
+                The Cure for Rare Cancer (CFRC) was born from a recognition that 
                 groundbreaking research often emerges from the most unexpected places - grassroots 
                 communities, underfunded labs; yet these discoveries frequently face steep barriers 
-                in funding, visibility, and participation. Collaboration is CRC's cornerstone, 
+                in funding, visibility, and participation. Collaboration is CFRC's cornerstone, 
                 encouraging partnerships and accelerating progress.
               </p>
             </CardContent>
