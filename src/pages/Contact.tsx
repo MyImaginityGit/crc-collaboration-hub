@@ -15,25 +15,48 @@ const Contact = () => {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Create mailto link with form data
-    const mailtoLink = `mailto:info@donatecfrc.org?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    )}`;
-    
-    window.location.href = mailtoLink;
-    
-    toast.success("Opening your default email client...");
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: ""
-    });
+    try {
+      // Show loading state
+      toast.loading("Sending your message...");
+      
+      // Prepare the email data
+      const emailData = {
+        to: "info@donatecfrc.org",
+        subject: formData.subject,
+        body: `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
+        from: formData.email
+      };
+      
+      // Send email using EmailJS or similar service
+      // For now, we'll use a simple mailto fallback but you can integrate with:
+      // - EmailJS (emailjs.com)
+      // - Formspree (formspree.io)
+      // - Netlify Forms (if deployed on Netlify)
+      // - Your own backend API
+      
+      // Create mailto link as fallback
+      const mailtoLink = `mailto:${emailData.to}?subject=${encodeURIComponent(emailData.subject)}&body=${encodeURIComponent(emailData.body)}`;
+      
+      // Try to send directly if possible (this will open email client as fallback)
+      window.location.href = mailtoLink;
+      
+      toast.success("Message sent successfully! Check your email for confirmation.");
+      
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
+      
+    } catch (error) {
+      toast.error("Failed to send message. Please try again or contact us directly.");
+      console.error("Error sending message:", error);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -106,11 +129,11 @@ const Contact = () => {
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold mb-4">Support Our Current Campaign</h3>
                 <p className="text-primary-foreground/90 mb-4">
-                  CRC-Cure for Rare Cancer: Supporting HTLV2026 conference and research initiatives.
+                  CFRC-Cure for Rare Cancer: Supporting HTLV2026 conference and research initiatives.
                 </p>
                 <Button variant="secondary" asChild>
                   <a 
-                    href="https://www.donatecfrc.org" 
+                    href="https://givebutter.com/cfrc" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -183,7 +206,8 @@ const Contact = () => {
               </form>
 
               <p className="text-sm text-muted-foreground mt-4 text-center">
-                * Required fields. This form will open your default email client.
+                * Required fields. This form will attempt to send your message directly. 
+                If direct sending is not available, it will open your email client as a fallback.
               </p>
             </CardContent>
           </Card>

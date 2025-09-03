@@ -40,12 +40,12 @@ const OurWork = () => {
                 <div className="flex items-start justify-between mb-4">
                   <h3 className="text-2xl font-bold text-primary">
                     <a 
-                      href="https://www.donatecfrc.org" 
+                      href="https://givebutter.com/cfrc" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="hover:text-accent transition-fast inline-flex items-center"
                     >
-                      CRC-Cure for Rare Cancer
+                      CFRC-Cure for Rare Cancer
                       <ExternalLink className="ml-2 h-5 w-5" />
                     </a>
                   </h3>
@@ -90,7 +90,7 @@ const OurWork = () => {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button variant="default" size="lg" asChild>
                     <a 
-                      href="https://www.donatecfrc.org" 
+                      href="https://givebutter.com/cfrc" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
@@ -99,11 +99,11 @@ const OurWork = () => {
                   </Button>
                   <Button variant="outline" size="lg" asChild>
                     <a 
-                      href="https://www.donatecfrc.org" 
+                      href="https://givebutter.com/cfrc" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
-                      Learn More at DonateCFRC.org <ArrowRight className="ml-2 h-4 w-4" />
+                      Learn More at GiveButter.com/CFRC <ArrowRight className="ml-2 h-4 w-4" />
                     </a>
                   </Button>
                 </div>
@@ -158,7 +158,7 @@ const OurWork = () => {
         </section>
 
         {/* Call to Action */}
-        <section className="text-center">
+        {/* <section className="text-center">
           <Card className="bg-primary text-primary-foreground shadow-strong">
             <CardContent className="p-8">
               <h2 className="text-3xl font-bold mb-6">Join Our Mission</h2>
@@ -179,7 +179,7 @@ const OurWork = () => {
               </div>
             </CardContent>
           </Card>
-        </section>
+        </section> */}
       </div>
     </div>
   );

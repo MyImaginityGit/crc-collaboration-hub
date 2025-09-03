@@ -33,7 +33,7 @@ const GetInvolved = () => {
                 <div className="text-center">
                   <Button size="lg" variant="default" asChild>
                     <a 
-                      href="https://www.donatecfrc.org" 
+                      href="https://givebutter.com/cfrc" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
@@ -58,7 +58,7 @@ const GetInvolved = () => {
                 <div className="text-center">
                   <Button size="lg" variant="secondary" asChild>
                     <a 
-                      href="https://www.donatecfrc.org" 
+                      href="https://givebutter.com/cfrc" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
@@ -84,9 +84,9 @@ const GetInvolved = () => {
                   research initiatives and workforce development programs.
                 </p>
                 <Button variant="outline" asChild>
-                  <Link to="/contact">
+                  <a href="/contact">
                     Contact Us <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -100,9 +100,9 @@ const GetInvolved = () => {
                   administrative tasks that help advance our mission.
                 </p>
                 <Button variant="outline" asChild>
-                  <Link to="/contact">
+                  <a href="/contact">
                     Get Started <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -114,7 +114,7 @@ const GetInvolved = () => {
           <Card className="bg-gradient-hero text-primary-foreground shadow-strong">
             <CardContent className="p-8 text-center">
               <h2 className="text-3xl font-bold mb-6">Current Campaign Spotlight</h2>
-              <h3 className="text-2xl font-semibold mb-4">CRC-Cure for Rare Cancer</h3>
+              <h3 className="text-2xl font-semibold mb-4">CFRC-Cure for Rare Cancer</h3>
               <p className="text-lg mb-8 text-primary-foreground/90 max-w-3xl mx-auto">
                 Supporting HTLV2026 - the first major U.S. conference on this virus in 23 years. 
                 Help us educate the next generation of scientists and support researchers from 
@@ -123,16 +123,20 @@ const GetInvolved = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" variant="secondary" asChild>
                   <a 
-                    href="https://www.donatecfrc.org" 
+                    href="https://givebutter.com/cfrc" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
                     Learn More <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <Button 
+                  size="lg" 
+                  className="bg-white text-primary border-2 border-white hover:bg-white/90 hover:text-primary shadow-lg animate-pulse" 
+                  asChild
+                >
                   <a 
-                    href="https://www.donatecfrc.org" 
+                    href="https://givebutter.com/cfrc" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

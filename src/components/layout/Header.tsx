@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -17,24 +18,41 @@ const Header = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
+  const handleNavigation = (path: string) => {
+    if (location.pathname === path) {
+      // If already on the page, scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // Navigate to new page and scroll to top
+      navigate(path);
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 100);
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="bg-background border-b border-border sticky top-0 z-50 shadow-soft">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <button 
+            onClick={() => handleNavigation("/")} 
+            className="flex items-center space-x-2"
+          >
             <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">C</span>
             </div>
-            <span className="font-bold text-xl text-primary">CRC</span>
-          </Link>
+            <span className="font-bold text-xl text-primary">CFRC</span>
+          </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
+              <button
                 key={item.path}
-                to={item.path}
+                onClick={() => handleNavigation(item.path)}
                 className={`text-sm font-medium transition-fast ${
                   isActive(item.path)
                     ? "text-accent border-b-2 border-accent pb-1"
@@ -42,10 +60,10 @@ const Header = () => {
                 }`}
               >
                 {item.name}
-              </Link>
+              </button>
             ))}
             <Button variant="default" size="sm" asChild>
-              <a href="https://www.donatecfrc.org" target="_blank" rel="noopener noreferrer">
+              <a href="https://givebutter.com/cfrc" target="_blank" rel="noopener noreferrer">
                 Donate
               </a>
             </Button>
@@ -67,19 +85,18 @@ const Header = () => {
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
               {navItems.map((item) => (
-                <Link
+                <button
                   key={item.path}
-                  to={item.path}
-                  className={`text-sm font-medium transition-fast ${
+                  onClick={() => handleNavigation(item.path)}
+                  className={`text-sm font-medium transition-fast text-left ${
                     isActive(item.path) ? "text-accent" : "text-muted-foreground"
                   }`}
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
-                </Link>
+                </button>
               ))}
               <Button variant="default" size="sm" className="w-fit" asChild>
-                <a href="https://www.donatecfrc.org" target="_blank" rel="noopener noreferrer">
+                <a href="https://givebutter.com/cfrc" target="_blank" rel="noopener noreferrer">
                   Donate
                 </a>
               </Button>

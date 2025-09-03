@@ -90,3 +90,24 @@ All colors MUST be HSL format for consistency.
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-pulse:hover {
+    animation: none;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+}

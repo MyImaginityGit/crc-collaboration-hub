@@ -142,7 +142,7 @@ const TermsOfUse = () => {
                 </p>
                 <div className="bg-secondary/30 p-4 rounded-lg mt-4">
                   <p className="text-muted-foreground">
-                    <strong>Center for Research & Collaboration (CRC)</strong><br />
+                    <strong>Center for Research & Collaboration (CFRC)</strong><br />
                     Email: info@donatecfrc.org<br />
                     Location: Blue Bell, PA, USA
                   </p>

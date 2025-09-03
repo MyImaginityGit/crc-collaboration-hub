@@ -33,8 +33,12 @@ const Home = () => {
                 Our Mission <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10" asChild>
-              <a href="#active-fundraisers">
+            <Button 
+              size="lg" 
+              className="bg-white text-primary border-2 border-white hover:bg-white/90 hover:text-primary shadow-lg animate-pulse" 
+              asChild
+            >
+              <a href="https://givebutter.com/cfrc" target="_blank" rel="noopener noreferrer">
                 Support Our Work <Heart className="ml-2 h-4 w-4" />
               </a>
             </Button>
@@ -75,12 +79,12 @@ const Home = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4 text-primary">
                   <a 
-                    href="https://www.donatecfrc.org" 
+                    href="https://givebutter.com/cfrc" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-accent transition-fast inline-flex items-center"
                   >
-                    CRC-Cure for Rare Cancer
+                    CFRC-Cure for Rare Cancer
                     <ExternalLink className="ml-2 h-5 w-5" />
                   </a>
                 </h3>
@@ -112,12 +116,12 @@ const Home = () => {
                 </p>
                 <p className="text-sm">
                   <a 
-                    href="https://www.donatecfrc.org" 
+                    href="https://givebutter.com/cfrc" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-accent hover:underline inline-flex items-center"
                   >
-                    Learn more at DonateCFRC.org
+                    Learn more at GiveButter.com/CFRC
                     <ExternalLink className="ml-1 h-4 w-4" />
                   </a>
                 </p>
