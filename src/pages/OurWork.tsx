@@ -23,7 +23,7 @@ const OurWork = () => {
               </div>
               <h2 className="text-3xl font-bold mb-6 text-primary">Our Mission in Action</h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-4xl mx-auto">
-                CFRC empowers individuals and organizations from grassroots communities to global platforms 
+                CRC empowers individuals and organizations from grassroots communities to global platforms 
                 by advancing workforce development, promoting cross-sector collaboration, and connecting 
                 research to real-world impact.
               </p>
@@ -103,7 +103,7 @@ const OurWork = () => {
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
-                      Learn More at GiveButter.com/CFRC <ArrowRight className="ml-2 h-4 w-4" />
+                      Learn More at DonateCFRC.org <ArrowRight className="ml-2 h-4 w-4" />
                     </a>
                   </Button>
                 </div>

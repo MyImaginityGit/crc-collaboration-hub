@@ -44,7 +44,7 @@ const Header = () => {
             <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">C</span>
             </div>
-            <span className="font-bold text-xl text-primary">CFRC</span>
+            <span className="font-bold text-xl text-primary">CRC</span>
           </button>
 
           {/* Desktop Navigation */}

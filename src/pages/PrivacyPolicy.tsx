@@ -114,7 +114,7 @@ const PrivacyPolicy = () => {
                 </p>
                 <div className="bg-secondary/30 p-4 rounded-lg mt-4">
                   <p className="text-muted-foreground">
-                    <strong>Cure for Rare Cancer (CFRC)</strong><br />
+                    <strong>Center for Research & Collaboration (CRC)</strong><br />
                     Email: info@donatecfrc.org<br />
                     Location: Blue Bell, PA, USA
                   </p>

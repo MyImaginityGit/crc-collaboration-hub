@@ -20,7 +20,7 @@ const Home = () => {
             Research for Solutions. Collaboration for Growth.
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            CFRC empowers individuals and organizations from grassroots communities to global platforms 
+            CRC empowers individuals and organizations from grassroots communities to global platforms 
             by advancing workforce development, promoting cross-sector collaboration, and connecting 
             research to real-world impact.
           </p>
@@ -84,7 +84,7 @@ const Home = () => {
                     rel="noopener noreferrer"
                     className="hover:text-accent transition-fast inline-flex items-center"
                   >
-                    CFRC-Cure for Rare Cancer
+                    CRC-Cure for Rare Cancer
                     <ExternalLink className="ml-2 h-5 w-5" />
                   </a>
                 </h3>
@@ -121,7 +121,7 @@ const Home = () => {
                     rel="noopener noreferrer"
                     className="text-accent hover:underline inline-flex items-center"
                   >
-                    Learn more at GiveButter.com/CFRC
+                    Learn more at DonateCFRC.org
                     <ExternalLink className="ml-1 h-4 w-4" />
                   </a>
                 </p>

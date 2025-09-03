@@ -18,7 +18,7 @@ const TermsOfUse = () => {
               <section>
                 <h2 className="text-2xl font-bold text-primary mb-4">1. Acceptance of Terms</h2>
                 <p className="text-muted-foreground">
-                  By accessing and using the Cure for Rare Cancer (CFRC) website, 
+                  By accessing and using the Center for Research & Collaboration (CRC) website, 
                   you accept and agree to be bound by the terms and provision of this agreement. 
                   If you do not agree to abide by the above, please do not use this service.
                 </p>
@@ -27,7 +27,7 @@ const TermsOfUse = () => {
               <section>
                 <h2 className="text-2xl font-bold text-primary mb-4">2. Use License</h2>
                 <p className="text-muted-foreground mb-4">
-                  Permission is granted to temporarily download one copy of the materials on CFRC's 
+                  Permission is granted to temporarily download one copy of the materials on CRC's 
                   website for personal, non-commercial transitory viewing only. This is the grant 
                   of a license, not a transfer of title, and under this license you may not:
                 </p>
@@ -42,7 +42,7 @@ const TermsOfUse = () => {
               <section>
                 <h2 className="text-2xl font-bold text-primary mb-4">3. Disclaimer</h2>
                 <p className="text-muted-foreground">
-                  The materials on CFRC's website are provided on an 'as is' basis. CFRC makes no 
+                  The materials on CRC's website are provided on an 'as is' basis. CRC makes no 
                   warranties, expressed or implied, and hereby disclaims and negates all other 
                   warranties including without limitation, implied warranties or conditions of 
                   merchantability, fitness for a particular purpose, or non-infringement of 
@@ -53,10 +53,10 @@ const TermsOfUse = () => {
               <section>
                 <h2 className="text-2xl font-bold text-primary mb-4">4. Limitations</h2>
                 <p className="text-muted-foreground">
-                  In no event shall CFRC or its suppliers be liable for any damages (including, 
+                  In no event shall CRC or its suppliers be liable for any damages (including, 
                   without limitation, damages for loss of data or profit, or due to business 
                   interruption) arising out of the use or inability to use the materials on 
-                  CFRC's website, even if CFRC or an authorized representative has been notified 
+                  CRC's website, even if CRC or an authorized representative has been notified 
                   orally or in writing of the possibility of such damage.
                 </p>
               </section>
@@ -93,7 +93,7 @@ const TermsOfUse = () => {
                 <h2 className="text-2xl font-bold text-primary mb-4">7. Intellectual Property</h2>
                 <p className="text-muted-foreground">
                   The content on this website, including but not limited to text, graphics, logos, 
-                  images, and software, is the property of CFRC or its content suppliers and is 
+                  images, and software, is the property of CRC or its content suppliers and is 
                   protected by copyright and other intellectual property laws. You may not reproduce, 
                   distribute, or create derivative works from this content without express written permission.
                 </p>
@@ -129,7 +129,7 @@ const TermsOfUse = () => {
               <section>
                 <h2 className="text-2xl font-bold text-primary mb-4">11. Changes to Terms</h2>
                 <p className="text-muted-foreground">
-                  CFRC reserves the right to revise these terms of service at any time without notice. 
+                  CRC reserves the right to revise these terms of service at any time without notice. 
                   By using this website, you are agreeing to be bound by the then current version 
                   of these terms of service.
                 </p>
@@ -142,7 +142,7 @@ const TermsOfUse = () => {
                 </p>
                 <div className="bg-secondary/30 p-4 rounded-lg mt-4">
                   <p className="text-muted-foreground">
-                    <strong>Cure for Rare Cancer (CFRC)</strong><br />
+                    <strong>Center for Research & Collaboration (CRC)</strong><br />
                     Email: info@donatecfrc.org<br />
                     Location: Blue Bell, PA, USA
                   </p>

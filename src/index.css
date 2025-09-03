@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CFRC Nonprofit Design System - All colors, gradients, fonts, etc defined here.
+/* CRC Nonprofit Design System - All colors, gradients, fonts, etc defined here.
 All colors MUST be HSL format for consistency.
 */
 
@@ -12,7 +12,7 @@ All colors MUST be HSL format for consistency.
     --background: 0 0% 100%;
     --foreground: 217 32% 17%;
     
-    /* CFRC Brand Colors - Deep Blue Primary with Teal and Gold Accents */
+    /* CRC Brand Colors - Deep Blue Primary with Teal and Gold Accents */
     --brand-deep-blue: 217 91% 18%;        /* Deep blue primary */
     --brand-teal: 172 85% 40%;             /* Vibrant teal accent */
     --brand-gold: 38 92% 50%;              /* Gold accent */

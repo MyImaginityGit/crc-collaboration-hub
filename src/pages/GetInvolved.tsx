@@ -17,7 +17,7 @@ const GetInvolved = () => {
 
         {/* Support Options */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-12">Ways to Support CFRC</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Ways to Support CRC</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Donate */}
             <Card className="shadow-medium hover:shadow-strong transition-smooth">
@@ -80,7 +80,7 @@ const GetInvolved = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-4 text-primary">Partner with Us</h3>
                 <p className="text-muted-foreground mb-6">
-                  Organizations and institutions can collaborate with CFRC to advance 
+                  Organizations and institutions can collaborate with CRC to advance 
                   research initiatives and workforce development programs.
                 </p>
                 <Button variant="outline" asChild>
@@ -114,7 +114,7 @@ const GetInvolved = () => {
           <Card className="bg-gradient-hero text-primary-foreground shadow-strong">
             <CardContent className="p-8 text-center">
               <h2 className="text-3xl font-bold mb-6">Current Campaign Spotlight</h2>
-              <h3 className="text-2xl font-semibold mb-4">CFRC-Cure for Rare Cancer</h3>
+              <h3 className="text-2xl font-semibold mb-4">CRC-Cure for Rare Cancer</h3>
               <p className="text-lg mb-8 text-primary-foreground/90 max-w-3xl mx-auto">
                 Supporting HTLV2026 - the first major U.S. conference on this virus in 23 years. 
                 Help us educate the next generation of scientists and support researchers from 
