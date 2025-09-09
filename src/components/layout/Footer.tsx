@@ -9,14 +9,15 @@ const Footer = () => {
           {/* Organization Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-lg">C</span>
-              </div>
-              <span className="font-bold text-xl">Center for Research & Collaboration (CRC)</span>
+              <img 
+                src="/CResCo.png" 
+                alt="CResCo Logo" 
+                className="w-8 h-8"
+              />
+              <span className="font-bold text-xl">CResCo</span>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Empowering individuals and organizations through workforce development, 
-              cross-sector collaboration, and connecting research to real-world impact.
+              CResCo is a non-profit organization, pursuing 501(c)(3) status. CResCo aims to empower youth and organizations through inclusive workforce development, cross-sector collaboration, and connecting research to real-world impact.
             </p>
           </div>
 
@@ -63,7 +64,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
-          <p className="text-primary-foreground/80">© 2025 Center for Research & Collaboration (CRC)</p>
+          <p className="text-primary-foreground/80">© 2025 CResCo</p>
           <p className="text-primary-foreground/80 mt-2 md:mt-0">
             Website Developed by:{" "}
             <a 

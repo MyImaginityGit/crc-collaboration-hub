@@ -23,7 +23,7 @@ const OurWork = () => {
               </div>
               <h2 className="text-3xl font-bold mb-6 text-primary">Our Mission in Action</h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-4xl mx-auto">
-                CRC empowers individuals and organizations from grassroots communities to global platforms 
+                CResCo empowers individuals and organizations from grassroots communities to global platforms 
                 by advancing workforce development, promoting cross-sector collaboration, and connecting 
                 research to real-world impact.
               </p>

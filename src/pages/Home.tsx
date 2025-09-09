@@ -8,6 +8,15 @@ import conferenceImage from "@/assets/conference-collaboration.jpg";
 const Home = () => {
   return (
     <div className="min-h-screen">
+      {/* Organization Name Strip */}
+      <section className="bg-orange-500 py-4">
+        <div className="container mx-auto px-4 lg:px-8 text-center">
+          <h1 className="text-2xl md:text-3xl font-bold text-white">
+            Center for Research & Collaboration
+          </h1>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="relative bg-gradient-hero py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-hero opacity-90"></div>
@@ -20,7 +29,7 @@ const Home = () => {
             Research for Solutions. Collaboration for Growth.
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            CRC empowers individuals and organizations from grassroots communities to global platforms 
+            CResCo empowers individuals and organizations from grassroots communities to global platforms 
             by advancing workforce development, promoting cross-sector collaboration, and connecting 
             research to real-world impact.
           </p>
@@ -84,7 +93,7 @@ const Home = () => {
                     rel="noopener noreferrer"
                     className="hover:text-accent transition-fast inline-flex items-center"
                   >
-                    CRC-Cure for Rare Cancer
+                    CFRC-Cure for Rare Cancer
                     <ExternalLink className="ml-2 h-5 w-5" />
                   </a>
                 </h3>

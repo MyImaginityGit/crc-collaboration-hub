@@ -41,10 +41,12 @@ const Header = () => {
             onClick={() => handleNavigation("/")} 
             className="flex items-center space-x-2"
           >
-            <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">C</span>
-            </div>
-            <span className="font-bold text-xl text-primary">CRC</span>
+            <img 
+              src="/CResCo.png" 
+              alt="CResCo Logo" 
+              className="w-8 h-8"
+            />
+            <span className="font-bold text-xl text-primary">CResCo</span>
           </button>
 
           {/* Desktop Navigation */}

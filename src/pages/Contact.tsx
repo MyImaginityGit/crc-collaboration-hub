@@ -117,7 +117,7 @@ const Contact = () => {
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold mb-4 text-primary">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  CRC empowers individuals and organizations from grassroots communities to global 
+                  CResCo empowers individuals and organizations from grassroots communities to global 
                   platforms by advancing workforce development, promoting cross-sector collaboration, 
                   and connecting research to real-world impact.
                 </p>
@@ -129,7 +129,7 @@ const Contact = () => {
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold mb-4">Support Our Current Campaign</h3>
                 <p className="text-primary-foreground/90 mb-4">
-                  CRC-Cure for Rare Cancer: Supporting HTLV2026 conference and research initiatives.
+                  CFRC-Cure for Rare Cancer: Supporting HTLV2026 conference and research initiatives.
                 </p>
                 <Button variant="secondary" asChild>
                   <a 
