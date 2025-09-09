@@ -9,11 +9,11 @@ const Footer = () => {
           {/* Organization Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <img 
+              {/* <img 
                 src="/CResCo.png" 
                 alt="CResCo Logo" 
                 className="w-8 h-8"
-              />
+              /> */}
               <span className="font-bold text-xl">CResCo</span>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">

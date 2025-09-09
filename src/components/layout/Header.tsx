@@ -41,11 +41,11 @@ const Header = () => {
             onClick={() => handleNavigation("/")} 
             className="flex items-center space-x-2"
           >
-            <img 
+            {/* <img 
               src="/CResCo.png" 
               alt="CResCo Logo" 
               className="w-8 h-8"
-            />
+            /> */}
             <span className="font-bold text-xl text-primary">CResCo</span>
           </button>
 
