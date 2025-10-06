@@ -17,7 +17,7 @@ const Footer = () => {
               <span className="font-bold text-xl">CResCo</span>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              CResCo is a non-profit organization, pursuing 501(c)(3) status. CResCo aims to empower youth and organizations through inclusive workforce development, cross-sector collaboration, and connecting research to real-world impact.
+              CResCo is a 501(c)(3) non-profit organization committed to empowering youth and organizations through inclusive workforce development, cross-sector collaboration, and connecting research to real-world impact.
             </p>
           </div>
 
@@ -28,10 +28,10 @@ const Footer = () => {
               <div className="flex items-center space-x-2 text-sm">
                 <Mail className="h-4 w-4" />
                 <a 
-                  href="mailto:info@donatecfrc.org" 
+                  href="mailto:info@researchncollab.org" 
                   className="hover:text-accent transition-fast"
                 >
-                  info@donatecfrc.org
+                  info@researchncollab.org
                 </a>
               </div>
               <div className="flex items-center space-x-2 text-sm">

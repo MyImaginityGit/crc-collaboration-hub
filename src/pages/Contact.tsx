@@ -24,7 +24,7 @@ const Contact = () => {
       
       // Prepare the email data
       const emailData = {
-        to: "info@donatecfrc.org",
+        to: "info@researchncollab.org",
         subject: formData.subject,
         body: `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
         from: formData.email
@@ -91,10 +91,10 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold">Email</h3>
                       <a 
-                        href="mailto:info@donatecfrc.org" 
+                        href="mailto:info@researchncollab.org" 
                         className="text-muted-foreground hover:text-accent transition-fast"
                       >
-                        info@donatecfrc.org
+                        info@researchncollab.org
                       </a>
                     </div>
                   </div>

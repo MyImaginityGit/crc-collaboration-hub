@@ -90,7 +90,7 @@ const OurWork = () => {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button variant="default" size="lg" asChild>
                     <a 
-                      href="https://givebutter.com/cfrc" 
+                      href="https://www.donatecfrc.org" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
@@ -99,7 +99,7 @@ const OurWork = () => {
                   </Button>
                   <Button variant="outline" size="lg" asChild>
                     <a 
-                      href="https://givebutter.com/cfrc" 
+                      href="https://www.donatecfrc.org" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >

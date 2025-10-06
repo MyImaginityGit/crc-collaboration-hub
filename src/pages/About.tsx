@@ -9,7 +9,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">About CResCo</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Empowering research communities through collaboration and workforce development
+            CResCo is a 501(c)(3) nonprofit dedicated to empowering youth and communities by connecting resources, knowledge, and opportunities across local and global landscapes. We aim to bridge the divide across regions, backgrounds, generations, and abilities through inclusive collaboration and accessible research, advance workforce development and cultivate the next generation of thinkers, doers, and leaders.
           </p>
         </div>
 

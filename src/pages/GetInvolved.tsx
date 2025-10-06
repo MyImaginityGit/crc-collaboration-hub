@@ -84,9 +84,9 @@ const GetInvolved = () => {
                   research initiatives and workforce development programs.
                 </p>
                 <Button variant="outline" asChild>
-                  <a href="/contact">
+                  <Link to="/contact">
                     Contact Us <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -100,9 +100,9 @@ const GetInvolved = () => {
                   administrative tasks that help advance our mission.
                 </p>
                 <Button variant="outline" asChild>
-                  <a href="/contact">
+                  <Link to="/contact">
                     Get Started <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -123,7 +123,7 @@ const GetInvolved = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" variant="secondary" asChild>
                   <a 
-                    href="https://givebutter.com/cfrc" 
+                    href="https://www.donatecfrc.org" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
@@ -136,7 +136,7 @@ const GetInvolved = () => {
                   asChild
                 >
                   <a 
-                    href="https://givebutter.com/cfrc" 
+                    href="https://www.donatecfrc.org" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

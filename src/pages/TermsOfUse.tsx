@@ -143,7 +143,7 @@ const TermsOfUse = () => {
                 <div className="bg-secondary/30 p-4 rounded-lg mt-4">
                   <p className="text-muted-foreground">
                     <strong>CResCo</strong><br />
-                    Email: info@donatecfrc.org<br />
+                    Email: info@researchncollab.org<br />
                     Location: Blue Bell, PA, USA
                   </p>
                 </div>

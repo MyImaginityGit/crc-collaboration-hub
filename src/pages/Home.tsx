@@ -29,16 +29,14 @@ const Home = () => {
             Research for Solutions. Collaboration for Growth.
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            CResCo empowers individuals and organizations from grassroots communities to global platforms 
-            by advancing workforce development, promoting cross-sector collaboration, and connecting 
-            research to real-world impact.
+            CResCo is a 501(c)(3) nonprofit empowering youth and organizations from grassroots communities to global platforms, committed to support global researchers, and drive innovation by advancing workforce development, promoting cross-sector collaboration, and connecting research to real-world impact.
           </p>
           <h2 className="text-xl md:text-2xl font-semibold text-primary-foreground mb-8">
             Advancing Today's Workforce. Elevating Tomorrow's Leaders.
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
-              <Link to="/about">
+              <Link to="/our-work">
                 Our Mission <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
@@ -64,8 +62,8 @@ const Home = () => {
               <p className="text-muted-foreground">Active Fundraiser</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-accent mb-2">23</div>
-              <p className="text-muted-foreground">Years Since Last Major Conference</p>
+              <div className="text-4xl font-bold text-accent mb-2">5 of 7</div>
+              <p className="text-muted-foreground">Continents Reach through campaigns, collaborations, and community engagement.</p>
             </div>
             <div>
               <div className="text-4xl font-bold text-gold mb-2">2026</div>
@@ -149,15 +147,8 @@ const Home = () => {
             </div>
             <h2 className="text-3xl font-bold mb-6 text-primary">Our Mission</h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              To empower individuals and organizations through workforce development, 
-              cross-sector collaboration, and connecting research to real-world impact. 
-              We bridge the gap between grassroots innovation and global platforms.
+              At the Center for Research & Collaboration (CRC), we are committed to nurturing youth into critical thinkers, innovative problem solvers, and inclusive leaders. Guided by our "research for all" philosophy, we promote collaborative learning through diverse thought leadership and accessible mentorship. Our mission is to advance workforce development and empower future changemakers to solve real-world challenges across local and global communities.
             </p>
-            <Button variant="default" size="lg" asChild>
-              <Link to="/about">
-                Learn More <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
           </div>
         </div>
       </section>
@@ -174,7 +165,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Workforce Development</h3>
                 <p className="text-muted-foreground">
-                  Building capacity and skills in research communities worldwide.
+                  Building capacity and skills in communities worldwide.
                 </p>
               </CardContent>
             </Card>
