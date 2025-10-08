@@ -2,21 +2,21 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen py-16">
-      <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+    <div className="min-h-screen py-8 md:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">Privacy Policy</h1>
-          <p className="text-lg text-muted-foreground">
+        <div className="text-center mb-8 md:mb-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-primary">Privacy Policy</h1>
+          <p className="text-base md:text-lg text-muted-foreground">
             Effective Date: January 1, 2025
           </p>
         </div>
 
         <Card className="shadow-medium">
-          <CardContent className="p-8 prose prose-lg max-w-none">
-            <div className="space-y-8">
+          <CardContent className="p-4 sm:p-6 md:p-8 prose prose-sm sm:prose-base md:prose-lg max-w-none">
+            <div className="space-y-6 md:space-y-8">
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">1. Information We Collect</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">1. Information We Collect</h2>
                 <p className="text-muted-foreground">
                   We collect information you provide directly to us, such as when you create an account, 
                   make a donation, contact us, or sign up for our newsletter. This may include your name, 
@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">2. How We Use Your Information</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">2. How We Use Your Information</h2>
                 <p className="text-muted-foreground mb-4">
                   We use the information we collect to:
                 </p>
@@ -39,7 +39,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">3. Information Sharing</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">3. Information Sharing</h2>
                 <p className="text-muted-foreground">
                   We do not sell, trade, or otherwise transfer your personal information to third parties 
                   without your consent, except as described in this policy. We may share information with 
@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">4. Data Security</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">4. Data Security</h2>
                 <p className="text-muted-foreground">
                   We implement appropriate security measures to protect your personal information against 
                   unauthorized access, alteration, disclosure, or destruction. However, no method of 
@@ -58,7 +58,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">5. Cookies and Tracking</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">5. Cookies and Tracking</h2>
                 <p className="text-muted-foreground">
                   Our website may use cookies to enhance your experience. You can choose to accept or 
                   decline cookies through your browser settings. Most web browsers automatically accept 
@@ -67,7 +67,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">6. Your Rights</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">6. Your Rights</h2>
                 <p className="text-muted-foreground mb-4">
                   You have the right to:
                 </p>
@@ -80,7 +80,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">7. Third-Party Links</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">7. Third-Party Links</h2>
                 <p className="text-muted-foreground">
                   Our website may contain links to third-party websites. We are not responsible for the 
                   privacy practices or content of these external sites. We encourage you to review the 
@@ -89,7 +89,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">8. Children's Privacy</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">8. Children's Privacy</h2>
                 <p className="text-muted-foreground">
                   Our services are not intended for children under the age of 13. We do not knowingly 
                   collect personal information from children under 13. If we become aware that we have 
@@ -99,7 +99,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">9. Changes to This Policy</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">9. Changes to This Policy</h2>
                 <p className="text-muted-foreground">
                   We may update this Privacy Policy from time to time. We will notify you of any changes 
                   by posting the new Privacy Policy on this page and updating the effective date at the 
@@ -108,7 +108,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">10. Contact Us</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">10. Contact Us</h2>
                 <p className="text-muted-foreground">
                   If you have any questions about this Privacy Policy, please contact us at:
                 </p>

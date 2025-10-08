@@ -4,58 +4,52 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send, Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import { useEmailJS } from "@/hooks/useEmailJS";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     subject: "",
     message: ""
   });
 
+  const { sendEmail, isLoading, error } = useEmailJS();
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    try {
-      // Show loading state
-      toast.loading("Sending your message...");
-      
-      // Prepare the email data
-      const emailData = {
-        to: "info@researchncollab.org",
-        subject: formData.subject,
-        body: `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
-        from: formData.email
-      };
-      
-      // Send email using EmailJS or similar service
-      // For now, we'll use a simple mailto fallback but you can integrate with:
-      // - EmailJS (emailjs.com)
-      // - Formspree (formspree.io)
-      // - Netlify Forms (if deployed on Netlify)
-      // - Your own backend API
-      
-      // Create mailto link as fallback
-      const mailtoLink = `mailto:${emailData.to}?subject=${encodeURIComponent(emailData.subject)}&body=${encodeURIComponent(emailData.body)}`;
-      
-      // Try to send directly if possible (this will open email client as fallback)
-      window.location.href = mailtoLink;
-      
-      toast.success("Message sent successfully! Check your email for confirmation.");
+    // Show loading state
+    toast.loading("Sending your message...");
+    
+    // Prepare the email data
+    const emailData = {
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      subject: formData.subject,
+      message: formData.message
+    };
+    
+    // Send email using EmailJS
+    const success = await sendEmail(emailData);
+    
+    if (success) {
+      toast.success("Message sent successfully! We'll get back to you soon.");
       
       // Reset form
       setFormData({
         name: "",
         email: "",
+        phone: "",
         subject: "",
         message: ""
       });
-      
-    } catch (error) {
-      toast.error("Failed to send message. Please try again or contact us directly.");
-      console.error("Error sending message:", error);
+    } else {
+      toast.error(error || "Failed to send message. Please try again or contact us directly.");
     }
   };
 
@@ -175,6 +169,19 @@ const Contact = () => {
                 </div>
 
                 <div>
+                  <Label htmlFor="phone">Phone Number</Label>
+                  <Input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder="(555) 123-4567"
+                    className="mt-1"
+                  />
+                </div>
+
+                <div>
                   <Label htmlFor="subject">Subject *</Label>
                   <Input
                     id="subject"
@@ -199,15 +206,23 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full">
-                  <Send className="mr-2 h-4 w-4" />
-                  Send Message
+                <Button type="submit" size="lg" className="w-full" disabled={isLoading}>
+                  {isLoading ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="mr-2 h-4 w-4" />
+                      Send Message
+                    </>
+                  )}
                 </Button>
               </form>
 
               <p className="text-sm text-muted-foreground mt-4 text-center">
-                * Required fields. This form will attempt to send your message directly. 
-                If direct sending is not available, it will open your email client as a fallback.
+                * Required fields. Your message will be sent directly to our team via email.
               </p>
             </CardContent>
           </Card>

@@ -1,0 +1,9 @@
+# Netlify redirects file
+# This ensures that all routes are handled by the React app
+# so refreshing the page or direct navigation works properly
+
+# Redirect all routes to index.html (React app)
+/*    /index.html   200
+
+# Optional: Handle specific API routes if you have any
+# /api/*  https://your-api-domain.com/api/:splat  200

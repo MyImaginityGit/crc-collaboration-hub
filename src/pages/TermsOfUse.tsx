@@ -2,21 +2,21 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const TermsOfUse = () => {
   return (
-    <div className="min-h-screen py-16">
-      <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+    <div className="min-h-screen py-8 md:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">Terms of Use</h1>
-          <p className="text-lg text-muted-foreground">
+        <div className="text-center mb-8 md:mb-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-primary">Terms of Use</h1>
+          <p className="text-base md:text-lg text-muted-foreground">
             Effective Date: January 1, 2025
           </p>
         </div>
 
         <Card className="shadow-medium">
-          <CardContent className="p-8 prose prose-lg max-w-none">
-            <div className="space-y-8">
+          <CardContent className="p-4 sm:p-6 md:p-8 prose prose-sm sm:prose-base md:prose-lg max-w-none">
+            <div className="space-y-6 md:space-y-8">
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">1. Acceptance of Terms</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">1. Acceptance of Terms</h2>
                 <p className="text-muted-foreground">
                   By accessing and using the CResCo website, 
                   you accept and agree to be bound by the terms and provision of this agreement. 
@@ -25,7 +25,7 @@ const TermsOfUse = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">2. Use License</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">2. Use License</h2>
                 <p className="text-muted-foreground mb-4">
                   Permission is granted to temporarily download one copy of the materials on CResCo's 
                   website for personal, non-commercial transitory viewing only. This is the grant 
@@ -40,7 +40,7 @@ const TermsOfUse = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">3. Disclaimer</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">3. Disclaimer</h2>
                 <p className="text-muted-foreground">
                   The materials on CResCo's website are provided on an 'as is' basis. CResCo makes no 
                   warranties, expressed or implied, and hereby disclaims and negates all other 
@@ -51,7 +51,7 @@ const TermsOfUse = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">4. Limitations</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">4. Limitations</h2>
                 <p className="text-muted-foreground">
                   In no event shall CResCo or its suppliers be liable for any damages (including, 
                   without limitation, damages for loss of data or profit, or due to business 
@@ -62,7 +62,7 @@ const TermsOfUse = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">5. Donations and Financial Contributions</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">5. Donations and Financial Contributions</h2>
                 <p className="text-muted-foreground mb-4">
                   Donations made through our website are processed by third-party payment processors. 
                   By making a donation, you agree that:
@@ -76,7 +76,7 @@ const TermsOfUse = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">6. User Conduct</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">6. User Conduct</h2>
                 <p className="text-muted-foreground mb-4">
                   When using our website, you agree not to:
                 </p>
@@ -90,7 +90,7 @@ const TermsOfUse = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">7. Intellectual Property</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">7. Intellectual Property</h2>
                 <p className="text-muted-foreground">
                   The content on this website, including but not limited to text, graphics, logos, 
                   images, and software, is the property of CResCo or its content suppliers and is 
@@ -100,7 +100,7 @@ const TermsOfUse = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">8. Privacy Policy</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">8. Privacy Policy</h2>
                 <p className="text-muted-foreground">
                   Your privacy is important to us. Please review our Privacy Policy, which also 
                   governs your use of the website, to understand our practices regarding your 
@@ -109,7 +109,7 @@ const TermsOfUse = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">9. Termination</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">9. Termination</h2>
                 <p className="text-muted-foreground">
                   We reserve the right to terminate or suspend your access to our website at any 
                   time, without prior notice, for conduct that we believe violates these Terms of 
@@ -118,7 +118,7 @@ const TermsOfUse = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">10. Governing Law</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">10. Governing Law</h2>
                 <p className="text-muted-foreground">
                   These terms and conditions are governed by and construed in accordance with the 
                   laws of Pennsylvania, United States, and you irrevocably submit to the exclusive 
@@ -127,7 +127,7 @@ const TermsOfUse = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">11. Changes to Terms</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">11. Changes to Terms</h2>
                 <p className="text-muted-foreground">
                   CResCo reserves the right to revise these terms of service at any time without notice. 
                   By using this website, you are agreeing to be bound by the then current version 
@@ -136,7 +136,7 @@ const TermsOfUse = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-primary mb-4">12. Contact Information</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-primary mb-3 md:mb-4">12. Contact Information</h2>
                 <p className="text-muted-foreground">
                   If you have any questions about these Terms of Use, please contact us at:
                 </p>
