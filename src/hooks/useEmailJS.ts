@@ -30,13 +30,6 @@ export const useEmailJS = () => {
         throw new Error('Please enter a valid email address');
       }
 
-      // Check if EmailJS is properly configured
-      if (EMAILJS_CONFIG.SERVICE_ID === 'your_service_id_here' || 
-          EMAILJS_CONFIG.TEMPLATE_ID === 'your_template_id_here' || 
-          EMAILJS_CONFIG.PUBLIC_KEY === 'your_public_key_here') {
-        throw new Error('EmailJS is not properly configured. Please contact the website administrator.');
-      }
-
       // Initialize EmailJS with public key
       emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
 
@@ -56,8 +49,6 @@ export const useEmailJS = () => {
         EMAILJS_CONFIG.TEMPLATE_ID,
         templateParams
       );
-
-      console.log('Email sent successfully:', response);
       return true;
 
     } catch (error) {

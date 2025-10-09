@@ -22,8 +22,8 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Show loading state
-    toast.loading("Sending your message...");
+    // Show loading state with dismissible toast
+    const loadingToastId = toast.loading("Sending your message...");
     
     // Prepare the email data
     const emailData = {
@@ -36,6 +36,9 @@ const Contact = () => {
     
     // Send email using EmailJS
     const success = await sendEmail(emailData);
+    
+    // Dismiss loading toast
+    toast.dismiss(loadingToastId);
     
     if (success) {
       toast.success("Message sent successfully! We'll get back to you soon.");

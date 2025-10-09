@@ -3,17 +3,17 @@
 // Get these from your EmailJS account at https://emailjs.com
 
 export const EMAILJS_CONFIG = {
-  // Replace with your actual EmailJS service ID
-  SERVICE_ID: import.meta.env.VITE_EMAILJS_SERVICE_ID || 'your_service_id_here',
+  // Your EmailJS service ID
+  SERVICE_ID: 'service_sf3na5b',
   
-  // Replace with your actual EmailJS template ID
-  TEMPLATE_ID: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'your_template_id_here',
+  // Your EmailJS template ID
+  TEMPLATE_ID: 'template_6it0omo',
   
-  // Replace with your actual EmailJS public key
-  PUBLIC_KEY: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'your_public_key_here',
+  // Your EmailJS public key
+  PUBLIC_KEY: '9VWn8dRfw1bbO4k7v',
   
   // Contact form recipient email
-  CONTACT_EMAIL: import.meta.env.VITE_CONTACT_EMAIL || 'info@researchncollab.org'
+  CONTACT_EMAIL: 'info@researchncollab.org'
 };
 
 // Template variables that will be used in your EmailJS template
